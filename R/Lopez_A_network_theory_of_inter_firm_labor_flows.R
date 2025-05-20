@@ -1,6 +1,6 @@
 # Script R per implementare gli indicatori sviluppati da López et al. (2020)
-# "A network theory of inter-firm labor flows"
-# 
+# title <- "A network theory of inter-firm labor flows"
+# gsub(" |\\-", "_", title)
 
 # Caricamento dei pacchetti necessari
 library(igraph)      # Per l'analisi di rete
