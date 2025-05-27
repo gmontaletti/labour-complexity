@@ -14,7 +14,7 @@ install_and_load <- function(packages) {
 }
 
 # Lista dei pacchetti necessari
-required_packages <- c("Matrix", "ggplot2", "reshape2", "gridExtra")
+required_packages <- c("Matrix", "ggplot2", "reshape2", "gridExtra", "expm")
 install_and_load(required_packages)
 
 # Carica expm per operatore potenza matriciale, con fallback se non disponibile
@@ -548,7 +548,7 @@ unemployment_prone <- which(hmm_result$params$Phi[, 2] > 0.3)
 cat("Stati nascosti:", unemployment_prone, "\n")
 
 cat("\n=== CONCLUSIONI ===\n")
-cat("Questo script illustra l'approccio innovativo di Shibata (2019):\n")
+cat("Questo script illustra l'approccio di Shibata (2019):\n")
 cat("1. L'HMM cattura eterogeneità non osservata tra lavoratori simili\n")
 cat("2. Modella dipendenza dalla durata nelle transizioni\n")
 cat("3. Supera significativamente i modelli FOM tradizionali\n")
